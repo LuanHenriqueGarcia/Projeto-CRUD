@@ -1,0 +1,696 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Nunito Sans;
+  border: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #bbbabb;
+  color: #050505;
+  transition: background-color 0.5s ease;
+  align-items: center;
+  justify-content: center;
+  scroll-behavior: smooth;
+}
+
+p {
+  padding: 10px 0px 10px 0px;
+}
+
+h1,
+h2,
+h3 {
+  padding: 10px 0px 15px 0px;
+  color: rgb(0, 0, 0);
+}
+
+img {
+  border: 1px solid #000000;
+  border-radius: 20px;
+  user-select: none;
+  animation: pular 6s ease-in-out infinite;
+}
+
+img:hover {
+  opacity: 0.5;
+  animation: border-color 2s reverse infinite;
+  cursor: pointer;
+}
+
+summary {
+  background-color: rgb(37, 35, 35);
+  outline: none;
+  padding: 15px;
+  border-radius: 50px;
+  display: inline;
+  width: 100%;
+  cursor: pointer;
+  color: white;
+}
+
+details {
+  background: rgb(150, 150, 150);
+  padding: 10px;
+  border-radius: 15px;
+}
+
+details summary {
+  cursor: pointer;
+  transition: margin 0.3s ease-out;
+}
+
+details[open] summary {
+  margin-bottom: 10px;
+}
+
+.luan {
+  cursor: not-allowed;
+  width: 290px;
+  margin: 0;
+  height: 50px;
+  padding: 10px;
+  font-family: "Anta", sans-serif;
+  font-style: normal;
+  font-size: 15px;
+  position: fixed;
+  right: -40px;
+  top: 10px;
+  z-index: 2;
+  animation: luan-in-right 2s ease;
+}
+
+#cabecalho {
+  background: linear-gradient(45deg, #070711, #510d2d, blue, #9d2a1d);
+  background: -webkit-linear-gradient(45deg, #070711, #510d2d, blue, #9d2a1d);
+  background: -o-linear-gradient(45deg, #070711, #510d2d, blue, #9d2a1d);
+  background: -moz-linear-gradient(45deg, #070711, #510d2d, blue, #9d2a1d);
+  background-size: 300% 300%;
+  animation: colors 8s ease infinite reverse;
+  height: 4em;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  display: block;
+}
+
+.menu-horizontal {
+  display: flex;
+  padding: 20px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.menu-horizontal li {
+  margin: 0 10px;
+}
+
+.menu-horizontal a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 0px 25px;
+}
+
+#mobile-img img {
+  display: none;
+  margin: auto;
+  width: 100%;
+  max-width: 500px;
+  pointer-events: none;
+  border: none;
+}
+
+#itens-menu {
+  text-align: center;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: white;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 1px solid gold;
+  margin-right: 20px;
+}
+
+#itens-menu:active {
+  transform: scale(0.9);
+}
+
+@keyframes colors {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  25% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes luan-in-right {
+  0% {
+    opacity: 0;
+    transform: translateX(2000px);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateX(-30px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes border-color {
+  0% {
+    border-color: #d1178d;
+  }
+
+  50% {
+    border-color: #00ff00;
+  }
+
+  100% {
+    border-color: blue;
+  }
+}
+
+@keyframes muda-cor {
+  0% {
+    border-color: #164184;
+  }
+
+  25% {
+    border-color: black;
+  }
+
+  50% {
+    border-color: #fff;
+  }
+
+  75% {
+    border-color: blue;
+  }
+
+  100% {
+    border-color: #041538;
+  }
+}
+
+@keyframes pular {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(-10px);
+  }
+
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+}
+
+@keyframes sombra {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 2;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  main .texto {
+    padding: 0px;
+    display: block;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .menu-horizontal {
+    display: block;
+  }
+
+  .label {
+    left: calc(50% - 30px);
+    top: -10px;
+  }
+
+  .menu-horizontal a {
+    display: flex;
+    width: 100%;
+    padding: 0px;
+  }
+
+  #cabecalho {
+    height: 9em;
+  }
+
+  div #start {
+    padding-top: 150px;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .luan {
+    display: none;
+  }
+}
+
+@media (max-width: 1450px) {
+  .mini-hat,
+  #foto {
+    display: none;
+  }
+
+  @keyframes sumir {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  #mobile-img img.hatss {
+    display: block;
+    animation: none;
+    animation: sumir 0.5s ease-in-out forwards;
+    animation: pular 6s ease-in-out infinite;
+  }
+
+  .favicon-git {
+    display: block;
+  }
+
+  #imagem-hat #texts {
+    padding: 0;
+  }
+}
+
+@media (max-width: 1025px) {
+  .t1,
+  .t2 {
+    width: 100%;
+  }
+}
+
+#gazin {
+  color: rgb(25, 171, 255);
+  text-decoration: none;
+}
+
+#gazin:hover {
+  color: #68fd04;
+}
+
+#start {
+  padding: 80px 10px 10px 10px;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  background: #fff;
+  animation: muda-cor 9s linear infinite;
+}
+
+.mr-20 {
+  margin-right: 20px;
+  border-radius: 20px;
+}
+
+.hb1 {
+  list-style: none;
+  border-radius: 10px;
+  padding: 20px;
+  margin-right: 20px;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+}
+
+#item {
+  color: rgb(25, 171, 255);
+  text-align: center;
+  list-style: none;
+  text-decoration: none;
+}
+
+#item a {
+  color: rgb(25, 171, 255);
+  text-align: center;
+  list-style: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#item:hover a {
+  color: #68fd04;
+}
+
+.opn {
+  list-style: none;
+  border-radius: 10px;
+  padding: 20px;
+  margin-right: 20px;
+  color: white;
+  font-size: 30px;
+}
+
+#rodape {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(66, 66, 66);
+  position: relative;
+  color: white;
+}
+
+#rodape a {
+  color: white;
+  text-decoration: none;
+}
+
+.tabela {
+  list-style: none;
+}
+
+.tabela-summary {
+  list-style: none;
+  border-radius: 25px;
+  text-align: center;
+  padding: 10px;
+  text-decoration: dashed;
+}
+
+#t1 {
+  width: 560px;
+  padding-right: 20px;
+}
+
+#t2 {
+  width: 800px;
+}
+
+#t1,
+#t2 {
+  display: inline-block;
+  padding-left: 50px;
+}
+
+.texto {
+  padding-right: 170px;
+  padding-left: 170px;
+}
+
+#imagem-hat {
+  display: flex;
+  user-select: none;
+  pointer-events: none;
+}
+
+#text-img {
+  padding: 5px 20px 5px 20px;
+  background-color: #232323;
+  border-radius: 20px;
+  border: 1px solid #000;
+  color: #fff;
+}
+
+.favicon-git {
+  border-radius: 100%;
+  height: 50px;
+  animation: pular 6s ease-in-out infinite;
+}
+
+.azul {
+  color: #538df0;
+}
+
+.vermelho {
+  color: red;
+}
+
+.amarelo {
+  color: #fbc017;
+}
+
+.verde {
+  color: #3aab54;
+}
+
+.laranja {
+  color: orangered;
+}
+
+.white {
+  color: white;
+}
+
+.cinza {
+  color: #3a3a3a;
+}
+
+.gold {
+  color: gold;
+}
+
+.mini-hat {
+  background: transparent;
+  cursor: default;
+  pointer-events: none;
+  background: none;
+  border: none;
+  animation: pular 4s ease-in-out infinite;
+}
+
+#texts {
+  padding: 0px 30px 0px 0px;
+}
+
+/* config do mouse */
+::-webkit-scrollbar {
+  width: 15px;
+  background: -webkit-linear-gradient(45deg, #070711, #510d2d, blue, #000000);
+}
+
+::-webkit-scrollbar-thumb {
+  background: black;
+}
+
+#dados {
+  display: flex;
+  margin: 10px;
+}
+
+body.dark {
+  background: #000 url(img/backgroud.png);
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  background-color: #111;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  position: relative;
+  height: 26px;
+  width: 50px;
+  transform: scale(1.5);
+}
+
+h4 strong {
+  float: right;
+}
+
+.label .ball {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
+
+.fa-moon {
+  color: #f1c40f;
+}
+
+.fa-sun {
+  color: #f39c12;
+}
+
+#mario {
+  position: absolute;
+  top: -75px;
+  right: 20px;
+  border: none;
+  animation: none;
+  border-radius: 0;
+  animation-fill-mode: backwards;
+  animation: descer 5s linear forwards;
+  animation-delay: 15s;
+}
+
+#mario-corredor {
+  position: absolute;
+  top: -48px;
+  border: none;
+  animation: none;
+  right: 101vw;
+  animation: mover 15s linear forwards;
+}
+
+.rodape {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  padding: 20px;
+}
+
+@keyframes mover {
+  0% {
+    right: 101vw;
+    top: -48px;
+  }
+
+  85% {
+    right: 100px;
+    top: -48px;
+  }
+
+  95% {
+    right: 25px;
+    top: -150px;
+  }
+
+  99% {
+    right: 25px;
+    top: 40px;
+  }
+
+  100% {
+    right: 25px;
+    top: 40px;
+    display: none;
+  }
+}
+
+@keyframes descer {
+  0% {
+    top: -75px;
+  }
+
+  99% {
+    top: 3px;
+  }
+
+  100% {
+    top: 3px;
+
+    display: none;
+  }
+}
+
+#ver-mais:hover {
+  color: white;
+}
+
+#ver-mais {
+  right: 0;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.gradient-text {
+  font-size: 32px;
+  background: -webkit-linear-gradient(#4285f4, #7702fc, #e24ae7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: color-change 5s infinite alternate;
+}
+
+@keyframes color-change {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.animate-charcter {
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #1900ff 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #0077ff 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 3s linear infinite;
+  display: inline-block;
+  font-size: 25px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
