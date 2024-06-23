@@ -9,22 +9,26 @@ Para visualizar o site com mais facilidade e segurança:
 
 Baixe e instale o XAMPP no seu computador: https://www.apachefriends.org/download.html
 Certifique-se de escolher a versão correta para o seu sistema operacional (Windows, Mac ou Linux).
+
 2. Movendo os arquivos do projeto:
 
 Localize a pasta do seu projeto que você deseja visualizar.
 Copie e cole essa pasta inteira para dentro da pasta htdocs do XAMPP.
 O caminho padrão da pasta htdocs geralmente é: C:\xampp\htdocs.
+
 3. Inicializando os serviços do XAMPP:
 
 Abra o painel de controle do XAMPP (XAMPP Control Panel).
 Inicie os serviços Apache e MySQL clicando nos botões verdes ao lado de cada um.
 Aguarde até que os serviços estejam em execução (os botões ficarão verdes).
+
 4. Acessando o site:
 
 Abra um navegador web.
 Na barra de endereço, digite o seguinte endereço, substituindo SEU_PROJETO pelo nome da pasta do seu projeto:
 http://localhost/Projeto-CRUD
 Pressione Enter para acessar o seu site.
+
 5. Importando o banco de dados (opcional):
 
 Se o seu projeto utiliza um banco de dados MySQL, você precisará importá-lo para o XAMPP.
