@@ -26,7 +26,7 @@ Aguarde até que os serviços estejam em execução (os botões ficarão verdes)
 
 Abra um navegador web.
 Na barra de endereço, digite o seguinte endereço, substituindo SEU_PROJETO pelo nome da pasta do seu projeto:
-http://localhost/Projeto-CRUD
+[http://localhost/Projeto-CRUD](http://localhost/projeto4-Luan/index.php)
 Pressione Enter para acessar o seu site.
 
 5. Importando o banco de dados (opcional):
