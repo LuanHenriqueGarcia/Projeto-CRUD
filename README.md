@@ -30,7 +30,7 @@ Acesse o MySQL no XAMPP e clique em importar e adicione a pasta cadastro.sql.
 
 Abra um navegador web.
 Na barra de endereço, digite o seguinte endereço:
-[http://localhost/Projeto-CRUD](http://localhost/projeto4-Luan/index.php)
+http://localhost/projeto4-Luan/index.php
 Pressione Enter para acessar o CRUD.
 
 
