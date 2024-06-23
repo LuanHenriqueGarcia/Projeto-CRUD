@@ -1,13 +1,14 @@
 
-Bem-vindo ao seu primeiro CRUD!
-Olá, meu nome é Luan Henrique Garcia Tódero, e este é o meu primeiro CRUD do ano. Desenvolvi este projeto utilizando HTML5, CSS3, JavaScript, PHP e MySQL, com o tema de Cibersegurança.
+##Bem-vindo ao seu primeiro CRUD!
+
+Olá, meu nome é **Luan Henrique Garcia Tódero**, e este é o meu primeiro CRUD do ano. Desenvolvi este projeto utilizando HTML5, CSS3, JavaScript, PHP e MySQL, com o tema de Cibersegurança.
 
 Instalação
 Para visualizar o site com mais facilidade e segurança:
 
 1. Baixando projeto:
 
-
+Faça o download deste projeto clicando em <>code e em Download.zip na aba principal do projeto. 
 
 2. Instalação do XAMPP:
 
