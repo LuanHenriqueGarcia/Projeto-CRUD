@@ -22,19 +22,17 @@ Abra o painel de controle do XAMPP (XAMPP Control Panel).
 Inicie os serviços Apache e MySQL clicando nos botões verdes ao lado de cada um.
 Aguarde até que os serviços estejam em execução (os botões ficarão verdes).
 
-4. Acessando o site:
+4. Criando o banco do projeto:
+
+Acesse o MySQL no XAMPP e clique em importar e adicione a pasta cadastro.sql.
+
+5. Acessando o site:
 
 Abra um navegador web.
-Na barra de endereço, digite o seguinte endereço, substituindo SEU_PROJETO pelo nome da pasta do seu projeto:
+Na barra de endereço, digite o seguinte endereço:
 [http://localhost/Projeto-CRUD](http://localhost/projeto4-Luan/index.php)
-Pressione Enter para acessar o seu site.
+Pressione Enter para acessar o CRUD.
 
-5. Importando o banco de dados (opcional):
-
-Se o seu projeto utiliza um banco de dados MySQL, você precisará importá-lo para o XAMPP.
-Abra o MySQLWorkbench (incluído na instalação do XAMPP).
-Crie um novo banco de dados com o mesmo nome que o utilizado no seu projeto.
-Importe o arquivo cadastro.sql para o novo banco de dados.
 
   
 ## Funcionalidades
