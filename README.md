@@ -1,6 +1,6 @@
 # Bem-vindo ao meu primeiro CRUD!
  
-Olá, meu nome é **Luan Henrique Garcia Tódero**, e este é o meu primeiro CRUD do ano. Desenvolvi este projeto utilizando  **HTML5, CSS3, JavaScript, PHP e MySql**, com o tema de **CyberSecurity**.
+Olá, meu nome é **Luan Henrique Garcia Tódero**, e este é o meu primeiro CRUD do ano. Desenvolvi este projeto utilizando  **HTML5, CSS3, JavaScript, PHP e MySQL**, com o tema de **CyberSecurity**.
  
 ## Instalação
  
