@@ -12,7 +12,7 @@ Certifique-se de escolher a versão correta para o seu sistema operacional (Wind
 
 2. Movendo os arquivos do projeto:
 
-Localize a pasta do seu projeto que você deseja visualizar.
+Localize a pasta projeto-CRUD.
 Copie e cole essa pasta inteira para dentro da pasta htdocs do XAMPP.
 O caminho padrão da pasta htdocs geralmente é: C:\xampp\htdocs.
 
