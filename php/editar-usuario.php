@@ -1,21 +1,25 @@
 <h1>Editar Usuário</h1>
 <?php
 
-if ($_SESSION["cargo"] <> 1) { // --cargo de usuario v em como 3 pordefalt, se for 1 ele entra na tela de admin--
+// if ($_SESSION["cargo"] <> 1) {
+  
+//   print "<script>location.href='center.php';</script>"; 
 
-  print "<script>location.href='center.php';</script>"; // --manda para a tela admin--
-
-}
+// }
 
 
-$sql = "SELECT * FROM usuarios WHERE id=" . $_REQUEST["id"];
+$sql = "SELECT * FROM usuarios s WHERE s.id=" . $_REQUEST["id"]. "  and  
+  (CASE WHEN ". $_SESSION['cargo']. "= '9' then true 
+   ELSE s.cargo = 3  END);";
 $res = $conn->query($sql);
+$qtd = $res->num_rows;
 $row = $res->fetch_object();
-
-
+ 
+if ($qtd > 0) {
 ?>
-<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
 
+
+<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
 <form action="?page=editar" method="POST">
   <input type="hidden" name="id" value="<?php print $row->id; ?>">
   <div class="mb-3">
@@ -45,3 +49,8 @@ $row = $res->fetch_object();
     <button type="submit" class="btn btn-primary">Enviar</button>
   </div>
 </form>
+
+
+<?php }else {
+   print "<p class='alert alert danger'>Não encontrou resultados</p>";
+} ?>    
