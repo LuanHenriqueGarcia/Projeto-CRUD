@@ -1,5 +1,5 @@
 
-### Bem-vindo ao meu primeiro CRUD!
+# Bem-vindo ao meu primeiro CRUD!
 
 Olá, meu nome é **Luan Henrique Garcia Tódero**, e este é o meu primeiro CRUD do ano. Desenvolvi este projeto utilizando HTML5, CSS3, JavaScript, PHP e MySQL, com o tema de Cibersegurança.
 
@@ -28,7 +28,7 @@ Abra o painel de controle do XAMPP (XAMPP Control Panel).
 Inicie os serviços Apache e MySQL clicando nos botões verdes ao lado de cada um.
 Aguarde até que os serviços estejam em execução (os botões ficarão verdes).
 
-# 5. Criando o banco de dados do projeto:
+#### 5. Criando o banco de dados do projeto:
 
 Com o XAMPP aberto, clique em "start" ao lado do Apache e do MySQL.
 Em seguida, clique em "Admin" ao lado do MySQL.
