@@ -32,6 +32,7 @@ Aguarde até que os serviços estejam em execução (os botões ficarão verdes)
 
 Com o XAMPP aberto, clique em "start" ao lado do Apache e do MySQL.
 Em seguida, clique em "Admin" ao lado do MySQL.
+Crie uma tabela chamada cadastro.
 Acesse a aba "Importar" e selecione o arquivo `cadastro.sql` que estara dentro da pasta principal.
 Clique em "Executar" para importar o banco de dados.
 
