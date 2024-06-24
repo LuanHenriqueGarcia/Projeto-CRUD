@@ -45,8 +45,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" href="../index.php">Home</a>
-          <a class="nav-link" href="entrar.php">Entrar</a>
+          <a class="nav-link active" aria-current="page" href="admin.php">Home</a>
           <a class="nav-link" href="../index.php">Sair</a>
           <a class="nav-link" href="?page=listar">Listar Usuários</a>
           <a class="nav-link" href="center.php">LH system</a>
@@ -61,11 +60,9 @@
         <?php
         include("config.php");
 
-        if ($_SESSION["cargo"] == 3) { // --verifica se ele é usuario normal e se for manda para a tela normal--
+        if ($_SESSION["cargo"] == 3) { 
           print "<script>location.href='center.php';</script>";
         }
-
-
 
         switch (@$_REQUEST["page"]) {
           case "pageCadastrar":
