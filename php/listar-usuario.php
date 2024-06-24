@@ -3,10 +3,12 @@
 <?php
 
 
-$sql = "SELECT * FROM usuarios";
+$sql = "SELECT * FROM usuarios s where 
+       (CASE WHEN ". $_SESSION['cargo']. "= '9' then true 
+        ELSE s.cargo = 3
+        END)";
 $res = $conn->query($sql);
 $qtd = $res->num_rows;
-
 if ($qtd > 0) {
 
    print "
@@ -36,16 +38,18 @@ if ($qtd > 0) {
       print "<td>" . date('d/m/Y h:m:s',  strtotime($row->data_criacao)) . "</td>";
 
 
-      print "<td>";
-      if ($row->cargo != 1) {
+      print "<td>";  
+      if($_SESSION["cargo"] == 9){
          print "<button onclick=\"location.href='?page=pageEditar&id=" . $row->id . "';\" class='btn btn-success'>Editar</button>";
-         print "<button onclick=\"if(confirm('Tem certeza que deseja excluir?')){location.href='?page=excluir&acao=excluir&id=" . $row->id . "';}else{return false;}\" class='btn btn-danger'>Excluir</button>";
-      } else {
-         print "<button class='btn btn-success' disabled>Editar</button>";
-         print "<button class='btn btn-danger' disabled>Excluir</button>";
       }
+      
+      print "<button onclick=\"if(confirm('Tem certeza que deseja excluir?')){location.href='?page=excluir&acao=excluir&id=" . $row->id . "';}else{return false;}\" class='btn btn-danger'>Excluir</button>";
+      
+      
+      
       print "</td>";
       print "</tr>";
+      
    }
    print "</table>";
 } else {
