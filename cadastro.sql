@@ -43,8 +43,7 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id`, `cargo`, `usuario`, `nome`, `email`, `senha`, `data_nasc`, `data_criacao`) VALUES
-(1, 1, 'admin', 'admin', 'teste@gmail.com', '123', '2009-02-09', '2024-06-20 16:53:05'),
-(37, 1, 'ednalva', 'ednalva', 'ednalva@gmail.com', '123', '1800-04-21', '2024-06-23 15:26:34');
+(1, 1, 'admin', 'admin', 'teste@gmail.com', '123', '2009-02-09', '2024-06-20 16:53:05');
 
 --
 -- Índices para tabelas despejadas
