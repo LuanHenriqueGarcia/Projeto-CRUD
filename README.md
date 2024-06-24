@@ -9,6 +9,7 @@ Para visualizar o site com mais facilidade e segurança:
 1. Baixando projeto:
 
 Faça o download deste projeto clicando em `<>code` e em Download.zip na aba principal do projeto. 
+Em seguida extraia a pasta.
 
 2. Instalação do XAMPP:
 
