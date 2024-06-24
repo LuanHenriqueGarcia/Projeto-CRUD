@@ -28,11 +28,11 @@ Abra o painel de controle do XAMPP (XAMPP Control Panel).
 Inicie os serviços Apache e MySQL clicando nos botões verdes ao lado de cada um.
 Aguarde até que os serviços estejam em execução (os botões ficarão verdes).
 
-5. Criando o banco de dados do projeto:
+# 5. Criando o banco de dados do projeto:
 
 Com o XAMPP aberto, clique em "start" ao lado do Apache e do MySQL.
 Em seguida, clique em "Admin" ao lado do MySQL.
-Acesse a aba "Importar" e selecione o arquivo cadastro.sql que estara dentro da pasta principal.
+Acesse a aba "Importar" e selecione o arquivo `cadastro.sql` que estara dentro da pasta principal.
 Clique em "Executar" para importar o banco de dados.
 
 6. Acessando o site:
