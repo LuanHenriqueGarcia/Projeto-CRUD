@@ -11,7 +11,7 @@ $senha = $_POST["senha"];
 
 $sql =  "SELECT * FROM usuarios 
              WHERE usuario = '{$usuario}'
-             AND senha = '{$senha}'";
+             AND senha = '{$senha}'";  
 
 $res = $conn->query($sql) or die($conn->error);
 
@@ -21,11 +21,11 @@ $qtd = $res->num_rows;
 if ($qtd > 0) {
    $_SESSION["usuarios"] = $usuario;
    $_SESSION["nome"] = $row->nome;
-   $_SESSION["cargo"] = $row->cargo; // reculpera o cargo e coloca na _SESSION para poder usar em outros locais
+   $_SESSION["cargo"] = $row->cargo;
+   
 
-   if ($_SESSION["cargo"] == 1 || $_SESSION["cargo"] == 9) { // cargo de usuario v em como 3 pordefalt, se for 1 ele entra na tela de admin
-
-      print "<script>location.href='admin.php';</script>"; // manda para a tela admin
+   if ($_SESSION["cargo"] == 1 || $_SESSION["cargo"] == 9) { 
+      print "<script>location.href='admin.php';</script>"; 
    }
 
    print "<script>location.href='center.php';</script>";
