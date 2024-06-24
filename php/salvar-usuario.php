@@ -2,8 +2,6 @@
 
 switch ($_REQUEST["page"]) {
 
-
-
   case 'editar':
     $cargo = $_POST["cargo"];
     $nome = $_POST["nome"];
@@ -38,7 +36,6 @@ switch ($_REQUEST["page"]) {
       }
       });</script>";
     }
-
     break;
 
   case 'excluir':
