@@ -2,6 +2,13 @@
 # Bem-vindo ao meu primeiro CRUD!
 
 Olá, meu nome é **Luan Henrique Garcia Tódero**, e este é o meu primeiro CRUD do ano. Desenvolvi este projeto utilizando HTML5, CSS3, JavaScript, PHP e MySQL, com o tema de Cibersegurança.
+<div display="inline">
+  <img height="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" />
+  <img height="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" />
+  <img height="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" />
+  <img height="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" />
+  <img height="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+</div>
 
 Instalação
 Para visualizar o site com mais facilidade e segurança:
