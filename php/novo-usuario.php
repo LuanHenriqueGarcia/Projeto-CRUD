@@ -36,9 +36,7 @@
     <button type="submit" class="btn btn-dark">Enviar</button>
   </div>
 
-
   <?php
-
 
   if ($_POST) {
 
@@ -69,10 +67,9 @@
         preventDuplicates: true,
         positionClass: 'toast-top-center',
         });</script>";
+        
       return;
     }
-
-
 
     if (!preg_match('/[A-Za-z]/', $senha) || !preg_match('/[0-9]/', $senha) || !preg_match('/[@#\-_$%^&+=§!\?]/', $senha)) {
       print "
@@ -84,7 +81,6 @@
 
       return;
     }
-
 
     $sqlinserir = "INSERT INTO usuarios (nome, email, usuario, senha, data_nasc) VALUES ('{$nome}', '{$email}', '{$usuario}', '{$senha}', '{$dataNascimento}')";
     $res = $conn->query($sqlinserir);
@@ -103,7 +99,4 @@
               });</script>";
     }
   }
-
-
-
   ?>

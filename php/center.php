@@ -27,12 +27,10 @@ if (empty($_SESSION)) {
 <body>
 
     <header id="cabecalho">
-
         <div>
             <ul class="menu-horizontal">
                 <li id="testes">
                     <input type="checkbox" class="checkbox" onclick="trocaModoCor()" id="chk" />
-
                     <label class="label" for="chk">
                         <i class="fas fa-moon"></i>
                         <i class="fas fa-sun"></i>
@@ -61,18 +59,15 @@ if (empty($_SESSION)) {
             <div>
                 <div id="start">
                     <div>
-
-                        <?php
-                        print "<div class='container'>
-                                <div class='row'>
-                                    <div class='col-md-12 text-center'>
-                                    <h3 class='animate-charcter'>Olá, " . $_SESSION["nome"] . " </h3>
-                                    </div>
-                                </div>
-                                </div>";
+             <?php
+                print "<div class='container'>
+                         <div class='row'>
+                            <div class='col-md-12 text-center'>
+                              <h3 class='animate-charcter'>Olá, " . $_SESSION["nome"] . " </h3>
+                            </div>
+                          </div>
+                        </div>";
                         ?>
-
-
                         <p>
                             &nbsp;Meu nome é <span>Luan</span>. Atualmente, sou jovem aprendiz na empresa <a href="https://gazin.com.br/" id="gazin" target="_blank"><i>Gazin</i></a>, na área de TI
                             (Tecnologia da Informação), na cidade de Douradina, no Paraná.

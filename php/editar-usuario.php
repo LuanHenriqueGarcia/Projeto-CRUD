@@ -7,14 +7,13 @@
 
 // }
 
-
-$sql = "SELECT * FROM usuarios s WHERE s.id=" . $_REQUEST["id"]. "  and  
-  (CASE WHEN ". $_SESSION['cargo']. "= '9' then true 
-   ELSE s.cargo = 3  END);";
-$res = $conn->query($sql);
-$qtd = $res->num_rows;
-$row = $res->fetch_object();
- 
+  $sql = "SELECT * FROM usuarios s WHERE s.id=" . $_REQUEST["id"]. "  and  
+        (CASE WHEN ". $_SESSION['cargo']. "= '9' then true 
+        ELSE s.cargo = 3  END);";
+    $res = $conn->query($sql);
+    $qtd = $res->num_rows;
+    $row = $res->fetch_object();
+  
 if ($qtd > 0) {
 ?>
 

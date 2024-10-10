@@ -42,7 +42,6 @@ switch ($_REQUEST["page"]) {
     $sql = "DELETE FROM usuarios WHERE id=" . $_REQUEST["id"];
     $res = $conn->query($sql);
     if ($res == true) {
-
       print "
       <script> toastr.success(' com sucesso','Excluido', {
       timeOut: 1000,

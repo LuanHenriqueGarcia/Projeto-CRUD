@@ -1,7 +1,5 @@
 <h1>Listar Usuários</h1>
-
 <?php
-
 
 $sql = "SELECT * FROM usuarios s where 
        (CASE WHEN ". $_SESSION['cargo']. "= '9' then true 
@@ -24,8 +22,6 @@ if ($qtd > 0) {
       <th>Ações</th>
    </tr>
    ";
-
-
 
    while ($row =  $res->fetch_object()) {
       print "<tr>";

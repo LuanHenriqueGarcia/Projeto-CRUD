@@ -513,7 +513,9 @@ details[open] summary {
 }
 
 body.dark {
-  background: #000 url(img/backgroud.png);
+  background: url(img/image.png) no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .checkbox {
