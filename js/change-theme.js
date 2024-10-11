@@ -1,6 +1,6 @@
 const botaoCor = document.getElementById("chk");
 const minhaDiv = document.getElementById("start");
-let cores = ["#070711", "#e7e6e7"];
+let cores = ["#020100", "#e7e6e7"];
 let coresTexto = ["rgba(226, 226, 226, 0.8)", "black"];
 let coresTextoH1 = ["white", "black"];
 let indiceCor = 0;
@@ -20,7 +20,7 @@ function trocaModoCor() {
 
   for (let i = 0; i < texto.length; i++) {
     if (texto[i].tagName == "H2") {
-      texto[i].style.color = coresTextoH1[textCor];
+      texto[i].style.color = coresTextoH1[textCor];  
     } else {
       texto[i].style.color = coresTexto[textCor];
     }

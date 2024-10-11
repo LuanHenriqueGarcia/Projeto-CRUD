@@ -513,7 +513,7 @@ details[open] summary {
 }
 
 body.dark {
-  background: url(img/image.png) no-repeat;
+  background: url(img/back.png) no-repeat;
   background-size: cover;
   background-position: center;
 }
